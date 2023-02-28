@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp1.EspaceVendeur"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="EspaceVendeur" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="424" FontSize="14"><Run Text="En tant que vendeur, vous ne pouvez que visualiser les données :"/><Run Text=" "/><LineBreak/><Run Text=""/><LineBreak/><Run Text="Voici par exemple la table des clients."/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <DataGrid x:Name="InfoClient" Margin="291,87,32.6,37"/>
+        <CheckBox x:Name="Check_entreprise" Content="Client Entreprise" HorizontalAlignment="Left" Margin="490,72,0,0" VerticalAlignment="Top" Checked="Client_Entreprise"/>
+        <CheckBox x:Name ="Check_particulier" Content="Client Particulier" HorizontalAlignment="Left" Margin="633.1,72,0,0" VerticalAlignment="Top" Checked="CheckBox_Particulier"/>
+        <TextBlock Name="AffichageNbClient" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="22" Width="321" Margin="291,388,0,0" Grid.ColumnSpan="2"/>
+
+
+    </Grid>
+</Window>

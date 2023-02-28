@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp1.AdminLogIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="AdminLogIn" Height="300" Width="400">
+    <Grid>
+        <Button Content="Connection" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Width="80" Click="Button_Click" Height="32" Margin="158,0,155.6,24.4"/>
+        <Label Content="Identifiant" HorizontalAlignment="Left" Height="24" Margin="69,36,0,0" VerticalAlignment="Top" Width="169" FontSize="9" Foreground="#FF0B0000"/>
+        <TextBox Name="id" HorizontalAlignment="Left" Height="18" Margin="69,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" TextChanged="TextBox_TextChanged" Foreground="#FF282727">
+            <TextBox.Effect>
+                <DropShadowEffect Direction="316" RenderingBias="Quality"/>
+            </TextBox.Effect>
+        </TextBox>
+        <Label Content="Mot de Passe" HorizontalAlignment="Left" Height="24" Margin="69,103,0,0" VerticalAlignment="Top" Width="169" FontSize="9" Foreground="#FF0B0000"/>
+        <CheckBox Content="Se souvenir de moi" HorizontalAlignment="Left" Margin="69,170,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" FontSize="7"/>
+        <PasswordBox Name="mdp" HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" Width="203" Margin="69,127,0,0">
+            <PasswordBox.Effect>
+                <DropShadowEffect/>
+            </PasswordBox.Effect>
+        </PasswordBox>
+
+
+    </Grid>
+</Window>

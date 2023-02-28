@@ -1,0 +1,39 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:Internal="clr-namespace:K4os.Compression.LZ4.Internal;assembly=K4os.Compression.LZ4" x:Class="WpfApp1.EspaceAdmin"
+        mc:Ignorable="d"
+        Title="EspaceAdmin" Height="497.283" Width="848.913">
+    <Window.Resources>
+        <BitmapImage x:Key ="menu" UriSource ="/atelier.jpg"/>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource ="{StaticResource ResourceKey = menu}"  />
+        </Grid.Background>
+        <Button x:Name="Menu_Fournisseur" Content="Menu Fournisseur" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Height="36" Margin="29,41,0,0" Background="#FF00F550" Click="Menu_Fournisseur_Click"/>
+        <Button Content="Statistiques" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Height="36" Margin="29,164,0,0" Click="Button_Click" Background="#FF00C2FF"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Height="36" Margin="29,123,0,0">
+            <Button Content="Menu Stock&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Height="36" Background="#FF00D6CE" Click="Button_Click_1"/>
+        </Button>
+        <Button x:Name="Menu_Client" Content="Menu Client" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Height="36" Margin="29,82,0,0" Click="Menu_Client_Click" Background="#FF00E591"/>
+        <Button Name="Menu_commande" Content="Menu Commande" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Height="38" Margin="29,205,0,0" Click="Menu_commande_Click" Background="#FF00A3FF"/>
+        <TextBlock x:Name ="Stat2" Visibility="Collapsed" HorizontalAlignment="Left" Height="209" Margin="188,159,0,0" TextWrapping="Wrap" Text="Module Statistique" VerticalAlignment="Top" Width="334" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" />
+        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Name ="TextStatistiques" Visibility="Collapsed" Content="Rapport des quantités&#xD;&#xA;Liste des membre de chaque programme&#xD;&#xA;Expiration des adhésions&#xD;&#xA;Meilleurs Clients&#xD;&#xA;Analyse des commandes&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="227,23,0,0" VerticalAlignment="Top" Height="75" Width="452" Background="#FF282727" Foreground="White" FontSize="10"/>
+
+        <RadioButton Name="Rapport_quantite" Visibility="Collapsed" GroupName="HandleCheck" HorizontalAlignment="Left" Margin="212,29,0,0" VerticalAlignment="Top"  Checked="Rapport_quantite_Checked"  />
+        <RadioButton Name ="Liste_membre_prog" Visibility="Collapsed" GroupName="HandleCheck" HorizontalAlignment="Left" Margin="212,43,0,0" VerticalAlignment="Top" Checked="Liste_membre_prog_Checked"   />
+        <RadioButton Name ="Expiration" Visibility ="Collapsed" GroupName="HandleCheck" HorizontalAlignment="Left" Margin="212,57,0,0" VerticalAlignment="Top" Checked="Expiration_Checked"   />
+        <RadioButton Name ="Meilleur_client" Visibility="Collapsed" GroupName="HandleCheck" HorizontalAlignment="Left" Margin="212,71,0,0" VerticalAlignment="Top" Checked="Meilleur_client_Checked"   />
+        <RadioButton Name ="Analyse_commande" Visibility="Collapsed" GroupName="HandleCheck" HorizontalAlignment="Left" Margin="212,85,0,0" VerticalAlignment="Top" Checked="Analyse_commande_Checked"   />
+        <DataGrid Name="Adhésion" HorizontalAlignment="Left" Height="125" Margin="212,140,0,0" VerticalAlignment="Top" Width="467" Visibility="Collapsed"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="238" Margin="227,164,0,0" VerticalAlignment="Top" Width="512">
+            <TextBlock Name="Stat" TextWrapping="Wrap" Visibility="Collapsed" Text="Visualisation des Stocks" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

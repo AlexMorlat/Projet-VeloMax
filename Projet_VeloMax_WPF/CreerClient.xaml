@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp1.CreerClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="CreerClient" Height="450" Width="561.13">
+    <Grid Margin="0,0,3.4,0">
+        <Button Content="Création" HorizontalAlignment="Left" Height="23" Margin="195,365,0,0" VerticalAlignment="Top" Width="166" Click="Button_Click"/>
+        <TextBox Name ="nom" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="Nom " VerticalAlignment="Top" Width="201" Margin="160,104,0,0"/>
+        <TextBox Name ="prenom" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="Prénom " VerticalAlignment="Top" Width="201" Margin="160,137,0,0"/>
+        <TextBox Name ="courriel" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="Courriel" VerticalAlignment="Top" Width="201" Margin="160,170,0,0" TextChanged="courriel_TextChanged"/>
+        <TextBox Name ="adresse" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="Adresse" VerticalAlignment="Top" Width="201" Margin="160,203,0,0" TextChanged="courriel_TextChanged"/>
+        <TextBox Name ="numero" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="Numéro" VerticalAlignment="Top" Width="201" Margin="160,236,0,0" TextChanged="courriel_TextChanged"/>
+
+    </Grid>
+</Window>

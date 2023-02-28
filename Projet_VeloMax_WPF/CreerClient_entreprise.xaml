@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp1.CreerClient_entreprise"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="CreerClient_entreprise" Height="450" Width="460.037">
+    <Grid Margin="0,0,3.6,0">
+        <Button Content="Création" HorizontalAlignment="Left" Height="46" Margin="124,317,0,0" VerticalAlignment="Top" Width="201" Click="Button_Click"/>
+        <TextBox Name ="nom" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="Nom entreprise" VerticalAlignment="Top" Width="201" Margin="124,79,0,0"/>
+        <TextBox Name ="contact" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="Contact entreprise" VerticalAlignment="Top" Width="201" Margin="124,112,0,0"/>
+        <TextBox Name ="courriel" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="Courriel" VerticalAlignment="Top" Width="201" Margin="124,145,0,0" />
+        <TextBox Name ="adresse" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="Adresse" VerticalAlignment="Top" Width="201" Margin="124,179,0,0" />
+        <TextBox Name ="remise" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="Remise" VerticalAlignment="Top" Width="201" Margin="124,211,0,0" />
+        <TextBox x:Name ="telephone" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="Telephone entreprise" VerticalAlignment="Top" Width="201" Margin="124,244,0,0" />
+
+    </Grid>
+</Window>

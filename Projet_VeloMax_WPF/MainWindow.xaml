@@ -1,0 +1,37 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Connexion VeloMax" Height="450" Width="800">
+    <Window.Resources>
+        <BitmapImage x:Key ="menu" UriSource ="/Magasin.jpg"/>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource ="{StaticResource ResourceKey = menu}"  />
+        </Grid.Background>
+
+        <TextBlock Text="VeloMax" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="48" FontWeight="Heavy" Margin="546,10,-35.4,0" Height="103" Width="283"></TextBlock>
+        <TextBlock x:Name="TimeNow" Foreground="Blue" HorizontalAlignment="Right" VerticalAlignment="Stretch"></TextBlock>
+        <Button Content="Administrateur" HorizontalAlignment="Left" Margin="33,14,0,0" VerticalAlignment="Top" Width="113" Height="53" Background="#FF2D53BF" Click="Profil_Administrateur">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Bouton_Vendeur" Content="Vendeur" HorizontalAlignment="Left" Margin="175,14,0,0" VerticalAlignment="Top" Width="113" Height="53" Background="#FFB61527" Click="Profil_Vendeur">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Name="BouttonDemo" Content="Démo et Requêtes supplémentaires" HorizontalAlignment="Left" Margin="33,340,0,0" VerticalAlignment="Top" Width="255" Height="48" Background="#FF80B33E" Click="Demo_Click"/>
+        <ScrollViewer Name ="TheScroll" HorizontalAlignment="Left" Height="253" Margin="316,135,0,0" VerticalAlignment="Top" Width="423" Foreground="#FFD74444" Visibility="Collapsed">
+            <TextBlock Name="Affichage" TextWrapping="Wrap" Text="" Foreground="#FFFAFAFA" Background="#FF060101"/>
+        </ScrollViewer>
+
+
+    </Grid>
+</Window>

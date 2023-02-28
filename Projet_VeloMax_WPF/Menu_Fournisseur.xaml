@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp1.Menu_Fournisseur"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Menu_Fournisseur" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="324,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="142"><Run Text="MENU FOURNISSEU"/><Run Text="R"/></TextBlock>
+        <DataGrid Name="InfoFournisseur" Margin="291,87,32.6,29">
+            
+        </DataGrid>
+        <Button Content="Nouveau Fournisseur" HorizontalAlignment="Left" Margin="40,72,0,0" VerticalAlignment="Top" Width="132" Height="27" Click="Creer"/>
+        <Button Content="Modifier Fournisseur" HorizontalAlignment="Left" Margin="40,104,0,0" VerticalAlignment="Top" Width="132" Height="27" Click="Modifier"/>
+        <Button Content="Supprimer Fournisseur" HorizontalAlignment="Left" Margin="40,136,0,0" VerticalAlignment="Top" Width="132" Height="27" Click="Supprimer"/>
+
+
+    </Grid>
+</Window>

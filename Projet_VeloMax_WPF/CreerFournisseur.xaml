@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.CreerFournisseur"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="CreerFournisseur"  Height="450" Width="561.13">
+    <Grid>
+        <Button Content="Création" HorizontalAlignment="Left" Height="38" Margin="160,330,0,0" VerticalAlignment="Top" Width="201" Click="Button_Click"/>
+        <TextBox Name ="Siret" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Margin="160,104,0,0"/>
+        <TextBox Name ="Nom" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Margin="160,137,0,0"/>
+        <TextBox Name ="Qualite" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Margin="160,170,0,0" />
+        <TextBox Name ="Adresse" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Margin="160,203,0,0"/>
+        <TextBox Name ="Nom_contact" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Margin="160,236,0,0" />
+        <TextBlock HorizontalAlignment="Left" Margin="117,104,0,0" TextWrapping="Wrap" Text="Siret :" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="117,138,0,0" TextWrapping="Wrap" Text="Nom :" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="105,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"><Run Text="Quali"/><Run Text="té :"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="100,204,0,0" TextWrapping="Wrap" Text="Adresse :" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89"><Run Text="Nom"/><Run Text=" "/><Run Text="Contact"/><Run Text=" :"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="160,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" Height="36" FontSize="14"><Run Text="Création d'un nouveau fournisseur"/><Run Text=" :"/></TextBlock>
+
+    </Grid>
+</Window>
